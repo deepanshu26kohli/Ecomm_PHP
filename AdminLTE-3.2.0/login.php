@@ -23,15 +23,11 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="./dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page">
+<body style='background-image: url(Images/login-background.jpg); background-repeat: no-repeat; background-size:cover ;' class="hold-transition login-page">
 <div class="login-box">
-  <div class="login-logo">
-    <a><b>Admin</b></a>
-  </div>
-  <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to Control Panel</p>
+      <p class="login-box-msg">Sign in to Admin Panel</p>
 
       <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="input-group mb-3">
