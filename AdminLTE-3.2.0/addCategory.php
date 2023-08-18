@@ -20,7 +20,7 @@
                     <input  type="text" name="category"  class="form-control w-25" id="exampleInputEmail1" placeholder="Category Name">
                   </div>
                   <div class="card-footer">
-                      <button type="submit" name="insert_category" class="btn btn-primary">Submit</button>
+                      <button type="submit" name="insert_category" class="btn btn-dark">Submit</button>
                   </div>
     </form>
 </div>

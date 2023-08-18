@@ -1,3 +1,9 @@
+<?php
+  $sqlTotalCat = sprintf("SELECT count(cat_id) FROM `category`");
+  $resultTotalCategories = mysqli_query($conn,$sqlTotalCat) or die("Query Failed.");
+  $total = mysqli_fetch_assoc($resultTotalCategories);
+
+?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -26,14 +32,11 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3><?php echo $total['count(cat_id)']; ?></h3>
 
-                <p>New Orders</p>
+                <p>Total Categories</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="showCategory.php" class="small-box-footer">Show all Categories <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

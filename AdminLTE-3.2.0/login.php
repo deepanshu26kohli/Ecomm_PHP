@@ -13,7 +13,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | Log in</title>
-
+  <style>
+        
+        .blur-background {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            backdrop-filter: blur(10px); 
+            z-index: -1;
+        }
+    </style>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -24,7 +33,8 @@
   <link rel="stylesheet" href="./dist/css/adminlte.min.css">
 </head>
 <body style='background-image: url(Images/login-background.jpg); background-repeat: no-repeat; background-size:cover ;' class="hold-transition login-page">
-<div class="login-box">
+<div class="blur-background"></div>
+<div class="login-box"> 
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to Admin Panel</p>
